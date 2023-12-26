@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Survey Form</title>
+  </head>
+  <body>
+<!--Header section-->   
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description"><em>Please take a moment to fill out this survey form</em></p>
+    </header>
+<!--Form section-->
+    <main>
+      <form id="survey-form">
+        <!--Input name field-->
+        <div>
+          <label id="name-label" for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Enter Your Name"  class="form" required>
+        </div>
+        <!--Input email field-->
+        <div>
+          <label id="email-label" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Enter Your Email"  class="form" required>
+        </div>
+        <!--Input age (number) field-->
+        <div>
+          <label id="number-label" for="age">Age</label> 
+            <input id="number" name="age" type="number" min="13" max="80" placeholder="Enter Your Age"  class="form" required>
+        </div>
+        <!--select dropdown field-->
+        <div>
+          <p>Select the course you interested in</p>
+            <select id="dropdown" class="form" required>
+              <option value="" >Select one</option>
+              <option value="web-development">Web Development Course</option>
+              <option value="python-programming">Python Programming Course</option>
+              <option value="java-programming">Java Programming Course</option>
+              <option value="data-science">Data Science Course</option>
+          </select>
+        </div>
+        <!--Input radio field-->
+        <div>
+          <p>Are you looking for:</p>
+          <label><input type="radio" id="free-course" name="preffer" value="free-course" checked class="inline">Free Course</label>
+          <label><input type="radio" id="paid-course" name="preffer" value="paid-course" class="inline">Paid Course</label>
+        </div>
+        <!--Input checkbox field-->
+        <div>
+          <p>Where did you hear about us?</p>
+          <label><input name="google" type="checkbox" value="google" class="inline">Google</label>
+          <label><input name="youtube" type="checkbox" value="youtube" class="inline">YouTube</label>
+          <label><input name="email" type="checkbox" value="email" class="inline">Email</label>
+          <label><input name="facebook" type="checkbox" value="facebook" class="inline">Facebook</label>
+          <label><input name="others" type="checkbox" value="others" class="inline">others</label>
+        </div>
+        <!--Textarea field-->
+        <div>
+          <p>Please leave your comments here</p>
+          <textarea id="comments" name="comment" rows="4" cols="40"  class="form" placeholder="Enter your comments here..."></textarea>
+        </div>
+
+        <div>
+          <input id="submit" type="submit" value="Submit" class="form" >
+        </div>
+
+      </form>
+
+    </main>
+  </body>
+</html>
